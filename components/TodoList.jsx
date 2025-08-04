@@ -32,12 +32,12 @@ export default function TodoList() {
 
 
   const toggleMutation = useMutation({
-  mutationFn: toggleTodo,  // 不管是否成功都照做
+  mutationFn: toggleTodo,  
   onSettled: (updatedTodo) => {
     queryClient.setQueryData(['todos'], (oldTodos) =>
       oldTodos.map((todo) =>
         todo.id === updatedTodo.id
-          ? { ...todo, completed: !todo.completed } // 手動切換完成狀態
+          ? { ...todo, completed: !todo.completed } 
           : todo
       )
     );

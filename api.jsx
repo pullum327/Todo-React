@@ -9,7 +9,6 @@ export const getTodos = async () => {
   return data.todos;
 };
 
-// api.js
 
 export const deleteTodo = async (id) => {
   try {
