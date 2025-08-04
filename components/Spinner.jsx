@@ -1,6 +1,6 @@
 // Spinner.jsx
 import React from 'react';
-import '../styles/spinner.css'; // 匯入 spinner 專屬樣式
+import '../styles/spinner.css'; 
 
 export default function Spinner() {
   return (

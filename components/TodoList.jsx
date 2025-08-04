@@ -108,7 +108,7 @@ useTomorrowDueNotifications(todos);
       <List
   height={540}
   itemCount={todos.length}
-  itemSize={100}     // 改為 100 讓每個項目有更多空間
+  itemSize={100}     
   width={'100%'}
   outerElementType={({ style, ...props }) => (
     <div {...props} style={{ ...style, overflowX: 'hidden' }} />
